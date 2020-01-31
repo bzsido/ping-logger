@@ -1,8 +1,7 @@
 #!/bin/bash
 
 # amount of time to ping in seconds
-#T=85400
-T=100
+T=85400
 # interval to wait between pings
 I=5
 # logfile location
