@@ -5,9 +5,9 @@ T=85400
 # interval to wait between pings
 I=5
 # logfile location
-LOG="/tmp/pinglog-$(date +%F-%H-%M)"
+LOG="/var/log/pinglog/pinglog-$(date +%F)"
 
 ping 8.8.8.8 -i "$I" -w "$T" | while read PONG
-do 
+do
     echo "$(date): $PONG" >> "$LOG"
 done
