@@ -13,5 +13,5 @@ do
     echo "$(date): $PONG" >> "$LOG"
 done
 
-# delete logs older than 6 months
-find $LOC -mtime +186 -exec rm {} \;
+# delete logs older than 4 months
+find $LOC -mtime +120 -exec rm {} \;
